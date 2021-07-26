@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <title>first level</title>
+    <meta charset = "UTF-8">
+    <meta name = "description" content = "just check it">
+    <meta name = "keywords" content = "HTML, CSS, JavaScript">
+    <meta name = "author" content = "jek-12">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="ma.js"></script>
+</head>
+<body>
+    <div class = "pop_bckg">
+        <div class = "pop_btn_close">
+            <span></span>
+            <span></span>
+        </div>
+        <div id = "pop_general_box">
+            <span>Обратная связь</span>
+            <span>Ваше имя *</span>
+            <input type = "text">
+            <span>Телефон *</span>
+            <input type = "text">
+            <span>Email *</span>
+            <input type = "text">
+            <span>Сообщение</span>
+            <textarea> </textarea>
+            <input id = "pop_btn" type = "button" value = "ОТПРАВИТЬ" >
+        </div>
+
+    </div>
+    <div id = "wrapper">
+        <div id = "header">
+            <div id = "header_center">
+                <img src = "img/logo.png" alt = "logo" title = "more info about this picture">
+                <div>
+                    <p>+7(499) 777-77-77</p>
+                    <p>+7(499) 777-77-77</p>
+                    <p id ="underline_feedback"><span class = "feedback">Обратная связь</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id = "menu">
+            <ul id = "menu_list" class = "display">
+                <li><a href = "">Главная</a></li>
+                <li><a href = "">Каталог</a></li>
+                <li><a href = "">Доставка и оплата</a></li>
+                <li><a href = "">Прайс-лист</a></li>
+                <li class = "menu_list_last"><a href = "">Контакты</a></li> <!--each last item of a new line in the menu if the lines are more than two must contain class = "menu_list_last"  (it was made for #menu .last::after { content: none; } )-->
+            </ul>
+        </div>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src = "img/slider.png" alt = "slider" title = "more info about this picture"></div>
+                <div class="swiper-slide"><img src = "img/slider_2.png" alt = "slider" title = "more info about this picture"></div>
+                <div class = "swiper_center_btn">
+                    <div class = "swiper_box_btn">
+                        <div class="swiper-button-pre">
+                            <div class = "overflow_f_btn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-nex">
+                            <div class = "overflow_f_btn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div id = "breadcrumbs">
+            <ul id = "breadcrumbs_li">
+                <li><span>Главная</span></li>
+                <li><span>Каталог</span></li>
+            </ul>
+        </div>
+        <div id = "content">
+            <div id = "content_center">
+                <div id = "left_block">
+                    <div class = "catalog_menu">
+                        <ul>
+                            <li><span>Автомобили</span></li>
+                            <li id = "display_list">
+                                <span class = "butovycha">Бытовая техника</span>
+                                <ul id = "catalog_menu_list" >
+                                    <li>Микроволновки</li>
+                                    <li>Холодильники</li>
+                                    <li>Посудомоечные машины</li>
+                                    <li>Чайники</li>
+                                </ul>
+
+                            </li>
+                            <li><span>Мобильная техника</span></li>
+                            <li><span>Компьютеры</span></li>
+                            <li><span>Одежда</span></li>
+                            <li><span>Недвижимость</span></li>
+                        </ul>
+                    </div>
+                    <img src = "img/logo_excel.png" alt = "logo_excel">
+                    <p>Прайс-лист</p>
+                </div>
+                <div id = "center_block">
+                    <div id = "center_image">
+                        <div>
+                            <img src = "img/catalog_img.png" alt = "Товар">
+                            <span><a>Самый клевый чайник, который надо купить!</a></span>
+                            <a><img src = "img/basket.png" alt = "basket"></a>
+                            <span>1 900 р.</span>
+                        </div>
+                        <div class = "img_margin_left" >
+                            <img src = "img/catalog_img.png" alt = "Товар">
+                            <span><a>Самый клевый чайник, который надо купить!</a></span>
+                            <a><img src = "img/basket.png" alt = "basket"></a>
+                            <span>1 900 р.</span>
+                        </div>
+                        <div class = "img_margin_left">
+                            <img src = "img/catalog_img.png" alt = "Товар">
+                            <span><a>Самый клевый чайник, который надо купить!</a></span>
+                            <a><img src = "img/basket.png" alt = "basket"></a>
+                            <span>1 900 р.</span>
+                        </div>
+                        <div class = "img_margin_top">
+                            <img src = "img/catalog_img.png" alt = "Товар">
+                            <span><a>Самый клевый чайник, который надо купить!</a></span>
+                            <a><img src = "img/basket.png" alt = "basket"></a>
+                            <span>1 900 р.</span>
+                        </div>
+                        <div class = "img_margin_left img_margin_top">
+                            <img src = "img/catalog_img.png" alt = "Товар">
+                            <span><a>Самый клевый чайник, который надо купить!</a></span>
+                            <a><img src = "img/basket.png" alt = "basket"></a>
+                            <span>1 900 р.</span>
+                        </div>
+                    </div>
+                    <div class = "pagnation">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                    </div>
+                    <hr>
+                    <div id = "center_block_bot">
+                        <span>
+                            Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов,
+                            поэтому можем уверенно называть себя профессионалами.
+                            На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.
+                            характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.
+                        </span>
+                        <span>
+                            Одним из основных направлений работ нашей компании является поисковое продвижение сайтов,
+                            на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам.
+                            При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения.
+                            На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "footer">
+            <div id = "footer_center">
+                <div id = "footer_left">
+                    <span>
+                        © 2012–2013 ЗАО «Компания»<br>
+                        info@name.ru
+                    </span>
+                </div>
+                <ul>
+                    <li>Главная</li>
+                    <li>Каталог</li>
+                    <li>Доставка и оплата</li>
+                    <li>Прайс-лист</li>
+                    <li>Контакты</li>
+                </ul>
+                <div id = "footer_right">
+                    <img id = "logo_bottom" src="img/company.png" alt = "logo" title = "more info about this picture">
+                    <p>
+                        <span>Разработка сайта</span> — <br>
+                            компания «Пиксель Плюс»
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
